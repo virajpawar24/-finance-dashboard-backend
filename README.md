@@ -40,5 +40,31 @@ Designed to showcase **production-level backend architecture**, secure APIs, and
 
 ## 📂 Project Structure
 ```
-finance-backend/ │ ├── controllers/ # Handles business logic │ ├── userController.js │ ├── transactionController.js │ └── dashboardController.js │ ├── models/ # Database schemas │ ├── User.js │ └── Transaction.js │ ├── routes/ # API endpoints │ ├── userRoutes.js │ ├── transactionRoutes.js │ └── dashboardRoutes.js │ ├── middleware/ # Authentication & authorization │ ├── authMiddleware.js │ └── roleMiddleware.js │ ├── config/ # Database connection │ └── db.js │ ├── .env # Environment variables ├── server.js # Entry point └── package.json # Dependencies  ```
+finance-backend/
+│
+├── controllers/ # Handles request logic
+│ ├── userController.js
+│ ├── transactionController.js
+│ └── dashboardController.js
+│
+├── models/ # Mongoose schemas
+│ ├── User.js
+│ └── Transaction.js
+│
+├── routes/ # API endpoints
+│ ├── userRoutes.js
+│ ├── transactionRoutes.js
+│ └── dashboardRoutes.js
+│
+├── middleware/ # Authentication & authorization
+│ ├── authMiddleware.js
+│ └── roleMiddleware.js
+│
+├── config/ # Database connection
+│ └── db.js
+│
+├── .env # Environment variables
+├── server.js # Main server file
+└── package.json # Project metadata & dependencies
+```
 
