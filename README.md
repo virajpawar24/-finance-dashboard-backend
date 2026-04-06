@@ -227,11 +227,6 @@ Unauthorized users receive:
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
 
 ## 📌 Summary
 
