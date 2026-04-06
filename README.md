@@ -227,6 +227,12 @@ Unauthorized users receive:
 
 ---
 
+## 🌐 Live Demo
+
+The backend is currently running locally.
+
+All APIs can be tested using Postman by running the server on:
+http://localhost:5000
 
 ## 📌 Summary
 
