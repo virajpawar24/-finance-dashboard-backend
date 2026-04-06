@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Finance Dashboard</h1>
+  <button onclick="getSummary()">Load Summary</button>
+  <pre id="output"></pre>
+
+  <script>
+    async function getSummary() {
+  try {
+    const res = await fetch("http://localhost:5000/api/dashboard/summary", {
+      headers: {
+        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5Y2U3YmIyMWM0NjU5YjdjYjgwYTM3YSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTQ2ODU1NywiZXhwIjoxNzc1NTU0OTU3fQ.9boI6STnVmIKhs-FahmwJUblh_k-nHI5X1IYFfiJqMI"
+      }
+    });
+
+    const data = await res.json();
+
+    console.log(data); // 🔥 ADD THIS
+
+    document.getElementById("output").innerText =
+      JSON.stringify(data, null, 2);
+
+  } catch (err) {
+    console.error(err);
+  }
+}
+  </script>
+</body>
+</html>
